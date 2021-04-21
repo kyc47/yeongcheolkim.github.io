@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta
             name='google-site-verification'
-            content='efjMNdIz7NsOOkbzUAEMvhjwXi-K7u7dLCpyY4zE49M'
+            content='hzElEHJdDZkfp5CKKQtpsvCOzjynHZAxKH6AJO0TrEs'
           />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
