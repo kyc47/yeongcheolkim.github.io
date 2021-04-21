@@ -255,7 +255,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         }}
         recordMap={recordMap}
         rootPageId={site.rootNotionPageId}
-        fullPage={!isLiteMode}
+        fullPage={true}
         darkMode={darkMode.value}
         previewImages={site.previewImages !== false}
         showCollectionViewDropdown={false}
