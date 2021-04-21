@@ -8,19 +8,14 @@ module.exports = {
 
   // basic site info (required)
   name: 'Dev.Yeongcheol',
-  domain: 'dev.yckim.io',
+  domain: 'Dev.YC',
   author: 'Yeong Cheol Kim',
 
   // open graph metadata (optional)
-  description: 'dev.yckim.io',
-  socialImageTitle: 'KYC',
-  socialImageSubtitle: 'Hello World! 👋',
+  description: 'to be',
 
   // social usernames (optional)
-  twitter: null,
   github: 'yeongcheolkim',
-  linkedin: null,
-
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
   defaultPageIcon: null,
@@ -32,7 +27,7 @@ module.exports = {
   imageCDNHost: null,
 
   // Utteranc.es comments via GitHub issue comments (optional)
-  utterancesGitHubRepo: null,
+  utterancesGitHubRepo: 'yeongcheolkim/blog',
 
   // whether or not to enable support for LQIP preview images (optional)
   // NOTE: this requires you to set up Google Firebase and add the environment
