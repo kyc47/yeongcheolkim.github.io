@@ -3,11 +3,11 @@
 }
 
 .index-page .notion-page-icon-wrapper {
-  display: block;
+  display: none;
 }
 
 .index-page .notion-title {
-  display: block;
+  display: none;
 }
 
 .index-page .notion-callout {
@@ -27,11 +27,11 @@
 }
 
 .index-page .notion-page-title-icon {
-    display: block;
+    display: none;
 }
 
 .index-page .notion-page-icon-wrapper {
-    display: block;
+    display: none;
 }
 
 /* dark mode */

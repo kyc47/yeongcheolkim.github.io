@@ -15,16 +15,17 @@ import 'prismjs/themes/prism-coy.css'
 // import 'rc-dropdown/assets/index.css'
 
 // used for rendering equations (optional)
-import 'katex/dist/katex.min.css'
+// import 'katex/dist/katex.min.css'
 
 // core styles for static tweet renderer (optional)
 import 'react-static-tweets/styles.css'
 
 // global style overrides for notion
 import 'styles/notion.css'
+import 'styles/index-notion.css'
 
 // global style overrides for prism theme (optional)
-import 'styles/prism-theme.css'
+// import 'styles/prism-theme.css'
 
 // here we're bringing in any languages we want to support for
 // syntax highlighting via Notion's Code block
@@ -37,8 +38,7 @@ import 'prismjs/components/prism-bash'
 import React from 'react'
 import { useRouter } from 'next/router'
 import { bootstrap } from 'lib/bootstrap-client'
-import { fathomId, fathomConfig } from 'lib/config'
-import * as Fathom from 'fathom-client'
+import * as gtag from '../lib/gtag'
 
 if (typeof window !== 'undefined') {
   bootstrap()
@@ -48,11 +48,9 @@ export default function App({ Component, pageProps }) {
   const router = useRouter()
 
   React.useEffect(() => {
-    if (fathomId) {
-      Fathom.load(fathomId, fathomConfig)
-
-      function onRouteChangeComplete() {
-        Fathom.trackPageview()
+    if (process.env.NODE_ENV === 'production') {
+      const onRouteChangeComplete = (url: URL) => {
+        gtag.pageview(url)
       }
 
       router.events.on('routeChangeComplete', onRouteChangeComplete)
