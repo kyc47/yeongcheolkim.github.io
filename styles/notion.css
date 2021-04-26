@@ -177,12 +177,12 @@
 .notion-page-cover {
   max-width: 100%;
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%); */
 }
 
 @media only screen and (max-width: 1200px) {
   .notion-page-cover {
-
+    /* border-radius: 0; */
   }
 }
 
